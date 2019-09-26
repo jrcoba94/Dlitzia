@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pizzeria.master.cs" Inherits="Pizzeria.PizzeriaMP.Pizzeria" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>D`LIZIA</title>
+
+   
+    <%--<link href="src/css/materialize.css" rel="stylesheet" />--%>
+    <%--<link href="src/css/font-awesome.min.css" rel="stylesheet" />--%>
+    <%--<link href="src/css/animate.css" rel="stylesheet" />--%>
+
+    <%--<link href="src/css/materialize.min.css" rel="stylesheet" />--%>
+
+    <link href="MasterPage/css/animate.css" rel="stylesheet" />
+    <link href="MasterPage/css/default-domainless.css" rel="stylesheet" />
+    <link href="MasterPage/css/drop-menu.css" rel="stylesheet" />
+    <link href="MasterPage/css/extralayers.css" rel="stylesheet" />
+    <link href="MasterPage/css/font-awesome.css" rel="stylesheet" />
+    <link href="MasterPage/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="MasterPage/css/home-slider-style.css" rel="stylesheet" />
+    <link href="MasterPage/css/materialize.css" rel="stylesheet" />
+    <link href="MasterPage/css/materialize.min.css" rel="stylesheet" />
+    <link href="MasterPage/css/menu.css" rel="stylesheet" />
+    <link href="MasterPage/css/multipage.css" rel="stylesheet" />
+    <link href="MasterPage/css/owl.carousel.css" rel="stylesheet" />
+    <link href="MasterPage/css/player.css" rel="stylesheet" />
+    <link href="MasterPage/css/portfolio-new.css" rel="stylesheet" />
+    <link href="MasterPage/css/prettyPhoto.css" rel="stylesheet" />
+    <link href="MasterPage/css/settings.css" rel="stylesheet" />
+    <link href="MasterPage/css/slicknav.css" rel="stylesheet" />
+    <link href="MasterPage/css/style.css" rel="stylesheet" />
+
+    <%--<script src="../PizzeriaMP/src/js/jquery-2.1.4.min.js"></script>--%>
+    <%--<script src="../PizzeriaMP/src/js/wow.min.js"></script>--%>
+    <%--<script src="../PizzeriaMP/src/js/materialize.min.js"></script>--%>
+    <%--<script src="../PizzeriaMP/src/js/materialize.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body style="display: block">
+    <div class="section">
+        <div id="fixed-header" class="header-fixed">
+            <div class="header-inner">
+                <div id="header" class="black nav-wrapper">
+                    <div class="menu-inner">
+                        <div class="header-table col s12 header-menu">
+                            <a href="#" class="brand-logo">
+                                <img src="../PizzeriaMP/MasterPage/img/DLIZIA_logo3.png" width="134" />
+                            </a>
+                            <nav class="main-nav">
+                                <a href="index.aspx" class="nav-toggle"></a>
+                                <ul id="sub-nav" class="nav right">
+                                    <li><a href="Bienvenida.aspx" class="selected white-text">Inicio</a></li>
+                                    <li><a href="Pizzeria.aspx" class="white-text">Pizzeria</a></li>
+                                    <li><a href="Empleados.aspx" class="white-text">Empleados</a></li>
+                                    <li><a href="Clientes.aspx" class="white-text">Clientes</a></li>
+                                    <li><a href="Pizza.aspx" class="white-text">Pizza</a></li>
+                                    <li><a href="Ingrediente.aspx" class="white-text">Ingredientes</a></li>
+                                    <li><a href="PizzaIngrediente.aspx" class="white-text">Ingredientes/Pizza</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="inicio" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer class="section" id="footer">
+        <div class="card-image" style="background: rgba(90, 90, 90, 0.30)">
+            <div class="container">
+                <div class="row">
+                    <br />
+                    <div class="col l6 s12 marbot15 wow fadeInLeft animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <div class="footer-title red-text" style="font-size: 15px">
+                            D`Lizia
+                        </div>
+                        <p class="martop10 padding-right-20per black-text" style="font-size: 12px">
+                            Especializados en pizza casera como en Italia.<br />
+                            <br />
+                            Tradición en preparación de comida italiana con los mejores ingredientes.
+                        </p>
+                    </div>
+                    <div class="col l3 s12 marbot15 wow fadeInUp animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="footer-title red-text" style="font-size: 15px">
+                            Ubicación
+                        </div>
+                        <p class="black-text" style="font-size: 12px">
+                            #323, Prolongación Paseo de Montejo,
+                            <br />
+                            Mérida, Yuc 97289, Mex<br />
+                            +123-456-7890
+                        </p>
+                    </div>
+                    <div class="col l3 s12 marbot15 wow fadeInRight animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;">
+                        <div class="footer-title red-text" style="font-size: 15px">
+                            Horarios
+                        </div>
+                        <p class="black-text" style="font-size: 12px">
+                            Lun - Mar: 4:45 PM - 10:30 PM
+                            <br />
+                            Vie: 4:45 PM - 11 PM
+                            <br />
+                            Sab: 4:30 PM - 11 PM
+                            <br />
+                            Dom: 5:00 PM - 10:30 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-strip">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <img src="../PizzeriaMP/MasterPage/img/DLIZIA_logo3.png" data-wow-delay="1s" class="responsive-img" />
+                    </div>
+                    <div class="col l4 s12 valign">
+                        © 2015 materials, All rights reserved.       
+                    </div>
+                </div>
+            </div>
+
+            <div class="down-circle">
+                <div data-wow-delay="200ms" class="span3 wow fadeInLeftBig animated" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInLeftBig;">
+                    <div class="anchor nextLink">
+                        <div class="wow bounce animated" data-wow-delay="1s" data-wow-iteration="1" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-iteration-count: 1; animation-name: bounce;">
+                            <a href="#inicio" class="btn-floating waves-effect waves-light btn-large white smoothscroll">
+                                <i class="fa fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
